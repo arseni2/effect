@@ -82,12 +82,9 @@
 	window.onload = ()=>{
 		let alert_box = document.getElementsByClassName('alert_box')[0]
 		click.addEventListener('click', (e)=>{
-			if(alert_box.className.split(/\s+/).indexOf("alert_box_active") !== -1){
-				//console.log('alert_box_active')
-				alert_box.classList.add("alert_box_unactive");
-			}else{
+
 				alert_box.classList.remove("alert_box_unactive");
-			}
+
 			alert_box.classList.toggle("alert_box_active");
 			
 		})
